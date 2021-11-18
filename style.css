@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+
+*
+{
+    margin: 0;
+    padding:0;
+    font-family:"Manrope";
+}
+body
+{
+    background: url("images/pattern-circles.svg") no-repeat 45vw 15vh, url("images/bg-pattern.svg") rgb(251, 252, 255) no-repeat;
+}
+main
+{
+    width: 60%;        
+    margin: 20vh auto;
+}
+h1
+{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#title-sub-txt
+{
+    text-align: center;
+    color: rgb(105, 105, 105);
+    margin-bottom: 8vh;
+}
+
+#pricing-pannel
+{
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+#pricing-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+#nb-page-views
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+}
+#monthly-amount-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#monthly-amount-nb
+{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+#pricing-bar
+{
+    position: relative;
+    background-color: hsl(224, 65%, 95%);
+    width: 100%;
+    height: 0.6em;
+    border-radius: 2em;
+    margin-bottom: 3vh;
+}
+#pricing-bar-filled
+{
+    background-color: rgb(148, 236, 214);
+    width: 50%;
+    height: 0.6em;
+    border-radius: 2em;
+    margin-bottom: 3vh;
+}
+#princing-cursor
+{
+    position: absolute;
+    top:-1em;
+    background-color: rgb(38, 197, 157);
+    border-radius: 100%;
+    padding: 0.9em 0.7em;
+    box-shadow: 0px 8px 15px 5px rgba(18, 230, 177, 0.445);
+}
+#princing-cursor:hover
+{
+    cursor:pointer;
+}
+
+#princing-options-pannel
+{
+    display: flex;
+    justify-content: end;
+    margin: 0 auto 2em auto;
+    width: 100%;
+    color: rgb(131, 131, 131);
+    font-size: 0.8em;    
+}
+#monthly-billing-txt, #on-off-button-bg, #yearly-billing-txt
+{
+    margin-right: 1em;
+}
+#discount-txt
+{
+    color:orangered;
+    background-color: rgb(255, 233, 211);
+    border-radius: 1em;
+    padding: 0.1em 0.5em;
+}
+#long-txt {display: inline;}
+#short-txt {display: none;}
+
+#on-off-button-bg
+{
+    position: relative;
+    background-color: rgb(148, 236, 214);
+    border-radius: 2em;
+    padding: 1em 1.5em;
+}
+#on-off-button-bg:hover
+{
+    cursor: pointer;
+    background-color: rgb(115, 184, 166);
+
+}
+#on-off-cursor
+{
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.6em;
+    
+    position: absolute;
+    left: 0.4em;
+    top:0.4em;
+}
+hr
+{
+    margin-bottom: 2em;
+}
+#princing-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(131, 131, 131);
+    font-size: 0.8em;
+}
+#checked-txt-container div
+{
+    margin-bottom: 0.4em;
+    padding-left: 1.5em;
+    background: url("images/icon-check.svg") no-repeat 0 0.5em;
+}
+#start-btn
+{
+    background-color: black;
+    padding: 1em;
+    border-radius: 2em;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#start-btn:hover
+{
+    cursor:pointer;
+    background-color: rgb(53, 53, 53);
+}
+
+@media all and (max-width: 900px)
+{
+    body
+    {
+        background: url("images/pattern-circles.svg") no-repeat 35vw 6vh, url("images/bg-pattern.svg") rgb(240, 240, 240) no-repeat;
+    }
+    main
+    {
+        width: 100%;
+        margin: 0;
+    }
+    h1 {font-size: 1.2em; font-weight: bold; margin: 3.7em auto 0.5em auto;}
+    #title-sub-txt {font-size: 0.8em; width: 60%; margin: 0 auto 6em auto;}
+
+    #pricing-pannel
+    {
+        width: 70%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    #pricing-header
+    {
+        display: block;
+    }
+    #nb-page-views
+    {
+        text-align: center;
+        font-size: 0.8em;
+        margin: 1.5em 0 1.5em 0;
+    }
+    #monthly-amount-nb
+    {
+        font-size: 2em;
+    }
+    #monthly-amount-container
+    {
+        margin-bottom: 2em;
+    }
+    #pricing-bar
+    {
+        margin-bottom: 3em;
+    }
+    #princing-options-pannel
+    {
+        font-size:0.7em;
+    }
+    #long-txt {display: none;}
+    #short-txt {display: inline;}
+    
+
+    #princing-footer
+    {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+    #checked-txt-container div
+    {
+        text-align: center;        
+    }
+    #start-btn
+    {
+        width: 80%;
+        margin: 2em 0 1em 0;
+    }
+}
